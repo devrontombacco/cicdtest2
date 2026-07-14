@@ -1,16 +1,16 @@
-name: Multi Step Workflow
+# name: Multi Step Workflow
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  oneJob:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo "This is the first step of the job"
-          echo "This is the second step of the job"
-          echo "This is the third step of the job"
-          echo "This is the fourth step of the job"
+# jobs:
+#   oneJob:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: |
+#           echo "This is the first step of the job"
+#           echo "This is the second step of the job"
+#           echo "This is the third step of the job"
+#           echo "This is the fourth step of the job"
