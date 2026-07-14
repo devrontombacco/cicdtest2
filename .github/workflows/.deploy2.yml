@@ -1,0 +1,10 @@
+name: Wait for button workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  waitForButton:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Button pressed. Approval Received. --> HELLO WORLD!! "
