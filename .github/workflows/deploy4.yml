@@ -1,24 +1,24 @@
-name: Multi Job Workflow
+# name: Multi Job Workflow
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  jobOne:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This is the first job of workflow 4"
-  jobTwo:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "this is the second job of workflow 4"
-  jobThree:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This is the third job of workflow 4"
-  jobFour:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "this is the fourth job of workflow 4"
+# jobs:
+#   jobOne:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "This is the first job of workflow 4"
+#   jobTwo:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "this is the second job of workflow 4"
+#   jobThree:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "This is the third job of workflow 4"
+#   jobFour:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "this is the fourth job of workflow 4"
