@@ -1,0 +1,20 @@
+name: Split Job Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests — this happens on every push"
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - run: echo "Deploying — this only happens when manually triggered"
